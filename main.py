@@ -3,6 +3,7 @@ import os
 from lista_opciones import *
 from calculadora import *
 from conversor import * 
+from frecuencias import *
 
 # INICIO DEL PROGRAMA
 os.system("cls")
@@ -10,7 +11,7 @@ os.system("cls")
 lista_de_opciones = [
     "Calculadora",
     "Conversor de Monedas",
-    "Opción 3",
+    "Graficar Frecuencias",
     "Opción 4",
     "Opción 5",
     "Opción 6",
@@ -31,6 +32,14 @@ while True:
             programa_calculadora()
         elif respuesta == "2":
             conversor_de_monedas()
+        elif respuesta == "3":
+                lista = [
+                    {"producto":"Tomate  ","f":20},
+                    {"producto":"Coliflor","f":30},
+                    {"producto":"Espinaca","f":35},
+                    {"producto":"Apio    ","f":20}
+                ]
+                grafica_frecuencias(lista)
         elif respuesta == '10':
             print("[Fin del Programa]")
             break
