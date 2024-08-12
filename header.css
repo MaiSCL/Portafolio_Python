@@ -1,0 +1,16 @@
+.Perfil {
+    grid-column: 1/5;
+    
+    border-bottom: 1px solid rgb(202, 202, 202);
+
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.Perfil img {
+    width: 6rem;
+    border-radius: 100%;
+}
+.Perfil h2 {
+    font-size: 2rem;
+}
